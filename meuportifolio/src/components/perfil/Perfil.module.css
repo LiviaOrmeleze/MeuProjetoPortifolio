@@ -1,0 +1,18 @@
+#Perfil{
+    text-align: center;
+    padding: 24px;
+
+    & img{
+        width: 112px;
+        height: 112px;
+        border-radius: 50%;
+        border: 3px solid var(--stroke-color);
+        object-fit:cover;
+    }
+
+    & p{
+        font-weight: 250;
+        line-height: 24px;
+        margin-top: 8px;
+    }
+}
