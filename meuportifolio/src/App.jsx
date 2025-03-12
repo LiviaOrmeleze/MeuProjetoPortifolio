@@ -5,11 +5,12 @@ import Switch from "./components/switch/Switch"
 import Foto from "./img/Lindona.webp"
 import Links from "./components/links/Links"
 import SocialLinks from "./components/socialLinks/SocialLinks"
+import Rodape from "./components/rodape/Rodape"
 
 
 
 const App = () => {
-  const [isLight, setIsLight] = useState(false)
+  const [isLight, setIsLight] = useState(true)
 
   const troca =() => {
     setIsLight (!isLight)
@@ -56,7 +57,9 @@ const App = () => {
           icon={"logo-instagram"}
         />
       </div>
-
+      <Rodape
+      nome={"LiviaOrmeleze"}
+      />
         </div>
       </div>
   )

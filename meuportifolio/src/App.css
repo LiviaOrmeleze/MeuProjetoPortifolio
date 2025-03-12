@@ -7,23 +7,32 @@
 }
 
 :root {
-  --bg-url: url(./img/fundo.jpg);
-  --text-color: #fff;
-  --stroke-color: rgba(255, 255, 255, 0.5);
-  --surface-color: rgba(255, 255, 255, 0.1);
-  --surface-color-hover: rgba(255, 255, 255, 0.5);
+  --bg-url: url(./img/deskDark.jpg);
+  --text-color: #ecdbc2;
+  --stroke-color: rgb(237, 220, 194);
+  --surface-color: hsla(36, 53%, 84%, 0.116);
+  --surface-color-hover:rgba(236, 219, 194, 0.36);
   --switch-bg-url: url(./img/MoonStars.svg);
-  --highlight-color: rgba(255, 255, 255, 0.2);
+  --highlight-color: rgb(236, 219, 194, 0.2);
 }
 
 .light {
-  --bg-url: url();
-  --text-color: #000;
-  --stroke-color: rgba(0, 0, 0, 0.5);
-  --surface-color: rgba(0, 0, 0, 0.1);
-  --surface-color-hover: rgba(0, 0, 0, 0.5);
+  --bg-url: url(./img/deskLight.jpg);
+  --text-color: #543b3b;
+  --stroke-color: rgb(84, 59, 59);
+  --surface-color: rgba(84, 59, 59, 0.116);
+  --surface-color-hover: rgba(84, 59, 59, 0.36);
   --switch-bg-url: url(./img/Sun.svg);
-  --highlight-color: rgba(0, 0, 0, 0.2);
+  --highlight-color: rgba(84, 59, 59, 0.2);
+}
+#App * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+#App {
+  background: var(--bg-url) no-repeat top center / cover;
+  height: 100vh;
 }
 
 #container {
@@ -31,14 +40,28 @@
   max-width: 588px;
   margin: auto ;
   padding: 0 24px;
+}
+#links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+}
 
+#socialLinks {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0px;
+  gap: 16px;
+  font-size: 24px;
 }
 
 @media (max-width: 700px) {
   :root {
-    --bg-url: url(./img/fundo.jpg);
+    --bg-url: url(./img/dark.jpg);
   }
   .light {
-    --bg-url: url(./img/bg-mobile-light.jpg);
+    --bg-url: url(./img/light.jpg);
   }
 }
